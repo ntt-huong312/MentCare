@@ -47,6 +47,8 @@
     - PrescriptionMedications: Các loại thuốc đã kê đơn
     - Consultation: Các cuộc tư vấn
     - Introduction: Giới thiệu (thông tin về các giới thiệu đến các khoa lâm sàng khác, dịch vụ xã hội, v.v.)
+    - FamilyContact: Thông tin liên hệ gia đình
+    - HealthFacility: Cơ sở y tế của bệnh nhân
   - Phương thức:
     - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
 
@@ -63,3 +65,8 @@
   - queryPatientList(criteria: String): List<Patient> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
   - queryPatientHistory(patientId: String): List<TreatmentRecord> - Truy vấn lịch sử điều trị của bệnh nhân theo mã định danh.
 
+# UC5. Tạo hồ sơ bệnh nhân
+
+## Biểu đồ Sequence
+![Diagram](https://www.planttext.com/plantuml/png/d5IxRjim5Dtv5MTi1_-0Xo10sZf06gDeZ08TQOasYKXaAb41F1OTCdGAEdJeKAiU2WGD4Y2TnC432_y7lw2_K51oAicEtA2J7lVSU-uzzv2_pN8_rJJHMHmH6cYLOCZjD_b6s2i9ck94qyc4Z5KcGvhCy8fgmQH-pGALX2zK4dkCVv90IPseg8qug7v6BF6u-eimgON-Myu7rw_Foy0MuJ6LTCfY9lN9BDMifEq84LBsZDvUsLWVnyvynLHGXL0uSo4XkIkkpw2v_Icdq4AISfBUNZLj7uV2cGyIcZlp4HCVsquXDD8ui7U8xGB3Gm806yJ3Aga1kEUfbUXZuCorQ88QelNskgRiuyWt6KCdj9dSfTS6wIXnnGBdphp7gIkM6kyo_qFR7p5EXIkMCPv8Lomp1FRkwGDjLHEsXAh5mTZhp26zbLg5M9Go75N0e2tU8yT-Qwyo1Axuda6x8bTbYHPVxCmNyPzYx2Zsp_axSfaCjomvtBHJAv5qswHXm0VrgevF7wDIcb-NpbmAwDMjCmivRPFip1_ON3RR2so-JYjz_yoP6qJ-D6NWpYpE43bpqRt6-x8lLxTPvzIeDrRXT_fWm9jguDpE5O9LZjIVzh3khxBSY7jJDxaVjzF8cS_25yUizXrNTku1vMrIxRTTQ7sDZ2goiStLsglScKz8LxdlOouv0WyW-qo6_lxz0m00__y30000)
+## Biểu đồ Lớp

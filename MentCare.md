@@ -47,8 +47,7 @@
     - PrescriptionMedications: Các loại thuốc đã kê đơn
     - Consultation: Các cuộc tư vấn
     - Introduction: Giới thiệu (thông tin về các giới thiệu đến các khoa lâm sàng khác, dịch vụ xã hội, v.v.)
-    - FamilyContact: Thông tin liên hệ gia đình
-    - HealthFacility: Cơ sở y tế của bệnh nhân
+    
   - Phương thức:
     - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
 
@@ -69,12 +68,49 @@
 
 ## Biểu đồ Sequence
 ![Diagram](https://www.planttext.com/plantuml/png/d5InRjim4Dtv5Mzi1_-0Xo10sZf06YDeZ08TQOasYKXaAb41F1OTCdGAEdJeKAiU2WGD6Y2TnC432_y7lw2_K51oAicEtA2J8DwxUtVl7ldRBFTJJHETnH6XWLO9Xjn-bQ-5lPQWAKurdKp8M6KofCaC9rGB9lKh5gWaVA6Is6FybmHAwaH5RSH1THYnnEFgFyAa5lflkPD4JKJ4F6PzyhoCR_4UKqcdB6PIdyvIpKhsZX0XPUlexPNzzN7ip1TC1LK8XJEN4fAxukOScjkVSWej92a7wkrLG_TnA9nvBw6vCnymyR7j548ZZGDxXzWkC3ma0B11FAoI6e1xdbgGFWREt8WcgA5TRwzhoZwEV9CnT4ARoLrwRP2E4bSiSE7CEvovOgdnDlC7sdwFSIPSiOpnHBfYcI6mTqyVQAkQi2LKBGx6NcSEwHtLAiIYbE6e0WPjyHuvzXjxdI5mnRSCsXMvAakq-69dFel_56D7iN_Etv7BPBXboU6cdLg9fDic3GC-g5TrVVeObTBykdBcIa2lRfrPo6cRP6V-mEQosLvWytLQwVjdpln0v6zJ1kxCuXoHCvVTQxml-t9rctLEZNfZ5Nwd3mQygGOkx5mXMEL8_MqFw_ugousuDtMJ-t4xZPpv97nnp6hVSMNd7b2-9jL-suNMpyYe8XlRNAszoftvY7IL-pxcaYFm0BBFPEYVuJy0003__mC0)
-## Biểu đồ Lớp
+# Biểu đồ Lớp
+## Phân tích lớp
+- **Boundary**:
+  - PatientRecordForm: Giao diện người dùng cho nhân viên lâm sàng để nhập thông tin bệnh nhân.
+  - PatientManagementSystem: Hệ thống quản lý hồ sơ bệnh nhân.
+- **Control**:
+  - PatientRecordController: Điều khiển quy trình tạo hồ sơ bệnh nhân, xử lý dữ liệu nhập vào từ Nhân viên lâm sàng, và giao tiếp với hệ thống quản lý.
+- **Entity**:
+  - PatientProfile: thông tin cá nhân
 
-![Diagram](https://www.planttext.com/plantuml/png/Z5HDRzim3BtxL-YO0WrsDuQYG8jW1fOjgDlUMObsYCbK9j8PWc6_h8V-fFs5GN6S-gCjvXl9n_V49yf_dr-kHI5gs_ZCUX0n6r12rZkq8RfLY8tvdPdq4UzQlGM5lCTq-Hhr51S9iRYOr1t9piEXRAr5aJMAG8q9jG_aiZ_PMxetWJK6xp7swZOYA8v0YrqNdVKkpHR1wtO5bZpf8JTVHl6bgQ0XVqZiO3Ktgs5uaPkd43m2Tue2UxmFQU0d49o93U3J6TR0K6E3hEL15CyE9iOJv2EwawkC4HGVc7wsVLVXac-YaRYUgMvYgCZZKMnf2eUiL176t9HTGqflC4fWy0LN8JQW57XKloFvyRrwfE2HBOvAjmGr1o4PPU_JlQHHnp8HnKRQ9VurEh979SdDLnBz_9gvEg9l0alhzNIQ8sIOwa15sWZNsicHZG7dA2N1VmkASlOdrVRWoRtkJRhCnSHf4A6QEvkd_cRpnx1SNhsxghafaPqO1mf6mxXxW1jmp5ObJuDY1AjYVf5k_uUal_dSF0XAtp6ZVhEZX3tAfnMgtM9tyYoxHdRfX_0F003__mC0)
+![Diagram](https://www.planttext.com/plantuml/png/Z5F1JkD03BtdA-PO3jNU8uIGG4YHjb0Hu6vct60njSlOAKA8Bzl3VXA_WAPfe4cBrDp6Viz-VdO-__q_LuDaxJ8MFeAgcuCHijsYbnIk92tTU-7oHxngxH8CoXupJxAWY5swGTk6gmoSd1o61T9LXBUwzHvLPwWA3MRmMYWK7yKX5HV2bYH6JBqMdn0C1w39gdkDsvwKxb4a8d17LLZZdUGv7a7n2DPOqmmO6bmYM_scXj_-vC9RoB5Q6cHCO7ZFzDBsv2faEzGISRFNV5jeqtFgge1ij21CfQixGWxFCQamn8eNafPW93p8tv8-tomUI2Aonq7gag1XKT91z2xRdISUjaceFj4grvzX8B_ffANxIsgdFv6p3Vf2MDjeMpKRo6we0rLvqQ7r8ydEGGYKWn2lnL2__ScvDKGAF-UGLpiPEGsgr71dyzZVOl_YfzEpNo-mT3LoK1V0m9aCsJkudHfx5rFcGJ61DtMlP4_75EatNxfxHUqPUwKFCcfOe_wvGlDFs2alYdFaaF_wBm000F__0m00)
 
 **Giải thích**
 - PatientRecordForm:
   - Thuộc tính:
     - inputData: Patient: Dữ liệu đầu vào từ nhân viên lâm sàng (bệnh nhân)
+  - Phương thức:
+    - getPatientInput(): Patient: Phương thức để thu thập thông tin bệnh nhân từ giao diện người dùng và trả về một đối tượng Patient.
+    - displaySuccessMessage(): void: Phương thức để hiển thị thông báo thành công khi hồ sơ bệnh nhân được tạo thành công.
 - PatientRecordController
+  - Phương thức: 
+    - reatePatientRecord(patient: PatientProfile): Phương thức điều khiển chính để tạo hồ sơ bệnh nhân, sử dụng thông tin bệnh nhân, cơ sở y tế, và liên hệ gia đình.
+    - saveToDatabase(patient: Patient): boolean: Phương thức để lưu bệnh nhân vào cơ sở dữ liệu thông qua PatientManagementSystem.
+
+- PatientRecordController:
+  - Phương thức:
+    - savePatient(patient: Patient): boolean: Phương thức lưu thông tin bệnh nhân vào cơ sở dữ liệu.
+    - generateUniquePatientId(): string: Phương thức sinh mã bệnh nhân duy nhất khi bệnh nhân không có mã định danh.
+      
+- PatientProfile:
+  - Thuộc tính:
+    - patientId: Mã định danh duy nhất của bệnh nhân.
+    - PersonalInformation: Thông tin cá nhân của bệnh nhân (ví dụ: họ tên, ngày sinh, địa chỉ).
+    - RiskOfViolence: Đánh giá rủi ro về tự gây hại/bạo lực
+    - Diagnosis: Chẩn đoán các tình trạng (bệnh nhân có thể mắc nhiều tình trạng cùng một lúc)
+    - Treatment: Phương pháp điều trị (nhiều phương pháp điều trị có thể được kê đơn, bao gồm CBT)
+    - PrescriptionMedications: Các loại thuốc đã kê đơn
+    - Consultation: Các cuộc tư vấn
+    - Introduction: Giới thiệu (thông tin về các giới thiệu đến các khoa lâm sàng khác, dịch vụ xã hội, v.v.)
+    - FamilyContact: Thông tin liên hệ gia đình
+    - HealthFacility: Cơ sở y tế của bệnh nhân
+  - Phương thức:
+    - validatePatientData(): boolean: Phương thức kiểm tra tính hợp lệ của thông tin bệnh nhân.
+    - assignUniqueId(): string: Phương thức gán mã bệnh nhân duy nhất.
+
+

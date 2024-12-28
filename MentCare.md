@@ -3,8 +3,9 @@
 ## Phân tích lớp
 - **Boundary**:
   - **PatientHistoryForm**: Giao diện để nhân viên lâm sàng tương tác, bao gồm tìm kiếm bệnh nhân và hiển thị lịch sử điều trị.
-- **Control**:
   - **PatientManagementSystem**: Hệ thống quản lý hồ sơ bệnh nhân đóng vai trò trung gian, nhận yêu cầu từ giao diện Control tương tác với Database
+- **Control**:
+  - PatientHistoryController: Xử lý logic tìm kiếm trước khi trả kết quả
 - **Entity**:
   - PatientDatabase: Thông tin tổng quan của bệnh nhân.
   - TreatmentRecord: Bản ghi chi tiết điều trị của bệnh nhân.
@@ -58,4 +59,7 @@
     - clinicalNotes: Ghi chú từ nhân viên lâm sàng.
   - Phương thức:
     - getRecordDetails(): Trả về thông tin chi tiết của bản ghi lịch sử điều trị.
+- PatientManagementSystem:
+  - queryPatientList(criteria: String): List<Patient> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
+  - queryPatientHistory(patientId: String): List<TreatmentRecord> - Truy vấn lịch sử điều trị của bệnh nhân theo mã định danh.
 

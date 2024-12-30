@@ -15,7 +15,7 @@
 
 ## Biểu đồ Lớp
 
-![Diagram](https://www.planttext.com/plantuml/png/d5IzZjD04Exz55E68YzWeTD9oI4Y4OZk4FtUUcAFME-6sN4WGbSW2ju32YHgggIu8a_Y9xXNGBRNEMz-6XgljDytttxpvwVTuxKNnLAL9j56UGyB9OHMNfCNnvjNZalucW2CmQDYNKoO19aKf70dJ3PliLKNz8QyG0hDyJBeNBLuHdvbr0Qp8DkJtZCgAT7ABMh7MKE6y5287xs05DQEiXOAEW5h9CxYuPKOyuNxVCFiU8xUgnn7PNVsYHp83ydPKaoS5NR68BS50M0K9bpZiPlZz4-OlRrGjLasj72vBeMocS4sXH4stnHklcXS2JbxqVo2tP8CXXxEChH2IqAEshT0ziugCxDBnwLg12Fyblp7TyiFv0nQZH4q9PLRvyb7jmV_yJECNZErXkUOaMvVyY7dvvjkPYRE-if8SDDIXbSTQTRq9AlqYMKze4wL8AJG764QWsU8XxYpTu_PmNvCA9yznu0sP4ahyzO9HX10ZZAiRZiWCTorU8gYoFWXVjpAkR8gnyRMtSOBTdi9yAb2ZZP2XnKzcQfe9eTX_p6G3qbovayn7bzTtfeKSb8EXEhju-eeUa0RQ9nad88kgasz-sw336psVohGzVPtrIkU10q4-sr8GRZU_e9rlVi6Kkp_sXo4BDpNkn-s05liVzeakKQRDJ_6Vm000F__0m00)
+![Diagram](https://www.planttext.com/plantuml/png/b5InRjim4Dtr5JUwWtz0A880TeeOQ5eZBRepr5awb2BTuycjKMGeElG_sg50vqxsaC5VeY_8BnIYAKUqdQ6B2F2zktjtzwZ7xSEb5yNIr2RJHdaFSoM4Lgx9Y-FrAySrVCq0nk1HiQucJ89C2d9u9qos3DXo7_IQl40EtV4ovha8U45-QTGQYvYs9xrdL5AZbLlKZekE3B5GZ1-zW1nMZee0nJmHwrASnMEL5FEL-tp5xFW6lLSbZkhzsJTo8DzdwIWcpWexOv33900OXGbNU2pZkEyJPgyhZcjM36i_Fv1AsS9Wq3x2xfl3rHUDIo5ddrKzPxSWWt5vimAjq8AGaxtDaRspoipimd6jkeG9Val-uzl51t86hSO4cf8ghVFaazk3_hGCezTCGV0D5gH39HzxVhhPcsNYh6-CH3M1ChpQasRTJef6dqZM0-fK2K8EtH5j63KVkPU3l3ii3l9JGlsaEGMq8KjQcJTEC840IfJXT8D1KdY_uYcA8kE7-1a3MjGItVUfGKvUW8vFyiHCYHM7OTV_xyFxB3lpPnYFBywyaXnAKWw4sit3iWyRu6bKQ2q7NJNhTllTnZ1Ox_uqeDlDxsQG8N07uRt9Sn1kDxzWrMw_WLIxlxO48GjtxVQ7hS1MkvysooxH5jsFxXy0003__mC0)
 
 **Giải thích**
 - PatientHistoryForm:
@@ -28,7 +28,7 @@
     -	displayPatientList(): Hiển thị danh sách bệnh nhân trên giao diện.
     -	displayHistory(): Hiển thị lịch sử điều trị của bệnh nhân được chọn.
     -	showErrorMessage(): Hiển thị thông báo lỗi trong trường hợp xảy ra lỗi (ví dụ: không tìm thấy bệnh nhân).
--	PatientHistoryController:
+-	PatientController:
   -	Thuộc tính:
     -	staffAccessLevel: Mức độ quyền truy cập của nhân viên lâm sàng (được dùng để kiểm tra quyền).
   -	Phương thức:
@@ -56,7 +56,7 @@
     - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
     - getRecordDetails(): Trả về thông tin chi tiết của bản ghi lịch sử điều trị.
     
-- PatientManagementSystem:
+- PatienDatabase:
   - queryPatientList(criteria: String): List<Patient> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
   - queryPatientHistory(patientId: String): List<TreatmentRecord> - Truy vấn lịch sử điều trị của bệnh nhân theo mã định danh.
 

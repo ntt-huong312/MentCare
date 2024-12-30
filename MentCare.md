@@ -73,11 +73,9 @@
 
 
 ## Biểu đồ Sequence
-![Diagram](https://www.planttext.com/plantuml/png/d5InRjim4Dtv5Mzi1_-0Xo10sZf06YDeZ08TQOasYKXaAb41F1OTCdGAEdJeKAiU2WGD6Y2TnC432_y7lw2_K51oAicEtA2J8DwxUtVl7ldRBFTJJHETnH6XWLO9Xjn-bQ-5lPQWAKurdKp8M6KofCaC9rGB9lKh5gWaVA6Is6FybmHAwaH5RSH1THYnnEFgFyAa5lflkPD4JKJ4F6PzyhoCR_4UKqcdB6PIdyvIpKhsZX0XPUlexPNzzN7ip1TC1LK8XJEN4fAxukOScjkVSWej92a7wkrLG_TnA9nvBw6vCnymyR7j548ZZGDxXzWkC3ma0B11FAoI6e1xdbgGFWREt8WcgA5TRwzhoZwEV9CnT4ARoLrwRP2E4bSiSE7CEvovOgdnDlC7sdwFSIPSiOpnHBfYcI6mTqyVQAkQi2LKBGx6NcSEwHtLAiIYbE6e0WPjyHuvzXjxdI5mnRSCsXMvAakq-69dFel_56D7iN_Etv7BPBXboU6cdLg9fDic3GC-g5TrVVeObTBykdBcIa2lRfrPo6cRP6V-mEQosLvWytLQwVjdpln0v6zJ1kxCuXoHCvVTQxml-t9rctLEZNfZ5Nwd3mQygGOkx5mXMEL8_MqFw_ugousuDtMJ-t4xZPpv97nnp6hVSMNd7b2-9jL-suNMpyYe8XlRNAszoftvY7IL-pxcaYFm0BBFPEYVuJy0003__mC0)
+![Diagram](https://www.planttext.com/plantuml/png/l5MxRjim5Dtr5MTi1_-01YD0aZf06YDeZ08TQOcsY4XaAb41F1OTCdGAEdJeKAiU2WGD6Y2TnC432_y7lo2_453oWwgj8EZGII1vxhtddllGWvhlPPAaCazYZmHIfEX7-Zj_o_GD1ybm9ibev0r5paEIJd1A9ADSlg61ICDN8aqinduzoYMJQy1fAaOifbuWk4n5lBhUhuynJQtTvhJRscAMDuVL-nQF0oB9a6GkyeHmCgO9vV9iaacQU5wL0ZhTYgUF4wE-OSo8GCYCkkBWaIblBo0Z_PkF8HdtgiGwdMwTlOyZPjH73XaPzGaZ-xXjuv5OOb_V8z4pz8yy0FWhShysSW1reAwZX8-UKRVC1JcYTRfjQVeujYGJo9IunYtmAZitwY0rvGoNHdt0kIdd4kzpUo7rpmJdp9Jp12-uAUSv0dt_iftNidG-UhhWJLThhJ2qkaVWjjDSbgkwTzQIDPHlyT0WHkECuhW61irgF5F7T_ecHs3A7pcaAGjHkMZ4IupwolvLtQJTstyNj8KBvU7Mr2nxjorcUoCx8x8pltgoVGmghVzS6tND81TtHituk1daIVjA7eTUe8kbMJMP1qRzGcm7FaTarEm2iL5NxRAltBvUtENFKVgmNc1FDLOlSjN0fPuA18i2cLr8uOPVtSE3o4wT6ti7sHqrZOtwmgnpJ3QD70azjO1guTNrTHrjDjsWZZRKXLXsVsJKPsIBmXAPyWY11NXxb8Vsb_48003__mC0)
 # Biểu đồ Lớp
-
-
-![Diagram](https://www.planttext.com/plantuml/png/Z5F1JW913BtlLymH3iJxnX0JZSac4WahtkjCMHg73awx66ByCWz-ahzWPfSL5Z1XRzE-rxw-Td--lcz48Mgzyfdr86Ace8IiCxGXkliGL-OZC-aZNjTw1mfvXvd6i22FRRf2tOMB11mCpyCSoTh3jgojHP49Ya252Rm9vBBFx9oAsy0QW_SOEoqs8YZsG8Dr-pfkEypDImWUWLkgm0QVGfhZ1GGlO1rhcW13XIjaBRUY-ETFAho3NAgbGiO8YdEcjxeZ5oxP8Hg9gvFckq9Dpv4f7BBIWZ3cfcm9AJp5A8715xm8SGLAWNlv6Sdhu-APWaUss4lT4LGSXAGNVKfsfudxRIAAZRHEzIVeo3QT93SF97gzZumRz6rWgRtkr3IGmr0BAjAYNMtxaXkpDk39xPUU5ZWuyXD4gEBMp6CNizEx7et6_zvPRafa9yQ1Wj7GPn_W3cgSt4MUni48LiMyaoulATBjDpTpGUaO9wNFCahOe5pTezebjigpx0RPfN_x5m00__y30000)
+![Diagram](https://www.planttext.com/plantuml/png/l5GzQ-D04EtrAxPq2dEzE48WuK2G49ElVhCxLeQiPvMTMOCvhifFkU8W44YHoYvI1F8_z0lo5y9ALY8vBboTkfrvRzxRqPFULoy7B3f8dBdCECsi9beGICx0-61_-J1JlpEL7gGgof4MdNUOIV1JTD2sIv1rkKZ0qTvsc4Mkd5wSHsE0-GIOTGa9FFTeip_PqCMX9mdUEGYT2nD02mnCZghsj2cubwjhxnreQgcivt3XqmskDSCEh2rk28nqLjAyTMTN2oKG12rmINWNEt9Xq_rP0bBvJREp-rz5ruCQpR4gB93W527awhmbfF840dlIhg2f3pCjw6dGFqE-FPrUeNT01WQj8zGbUKOUL2_Igvqr5-hB160Ji4hpJy2YQPGuLyV8ylEhij-W3prnTB9sqq3wfHPKf53PQ8QMcsNDjKFx5R2q_T76FZKpbjGkStEBsVUlPppUtvBcN9NrwX7LulKXAbCl_yMEsWCDgKtqScLkug9UtPCIh9SlrVO93RP7_qpHBlnFS6z0buXSkRUd-4D2lVohvERrcKebI5bs06JJJ-G3003__mC0)
 
 **Giải thích**
 - PatientRecordForm:
@@ -86,12 +84,16 @@
   - Phương thức:
     - getPatientInput(): Patient: Phương thức để thu thập thông tin bệnh nhân từ giao diện người dùng và trả về một đối tượng Patient.
     - displaySuccessMessage(): void: Phương thức để hiển thị thông báo thành công khi hồ sơ bệnh nhân được tạo thành công.
-- PatientRecordController
+- PatientController
   - Phương thức: 
     - reatePatientRecord(patient: PatientProfile): Phương thức điều khiển chính để tạo hồ sơ bệnh nhân, sử dụng thông tin bệnh nhân, cơ sở y tế, và liên hệ gia đình.
     - saveToDatabase(patient: Patient): boolean: Phương thức để lưu bệnh nhân vào cơ sở dữ liệu thông qua PatientManagementSystem.
-
-- PatientRecordController:
+- PatientConnect:
+  - Phương thức:
+    - savePatient(patient: Patient): boolean: Phương thức lưu thông tin bệnh nhân vào cơ sở dữ liệu.
+    - generateUniquePatientId(): string: Phương thức sinh mã bệnh nhân duy nhất khi bệnh nhân không có mã định danh.
+      
+- PatientDatabase:
   - Phương thức:
     - savePatient(patient: Patient): boolean: Phương thức lưu thông tin bệnh nhân vào cơ sở dữ liệu.
     - generateUniquePatientId(): string: Phương thức sinh mã bệnh nhân duy nhất khi bệnh nhân không có mã định danh.

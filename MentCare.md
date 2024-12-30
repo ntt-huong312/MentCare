@@ -1,9 +1,9 @@
-# UC4. Xem lịch sử điều trị
+![image](https://github.com/user-attachments/assets/7bec4324-c7b6-465e-b7f6-30e1fa52ee3b)# UC4. Xem lịch sử điều trị
 
 ## Phân tích lớp
 - **Boundary**:
   - **PatientHistoryForm**: Giao diện để nhân viên lâm sàng tương tác, bao gồm tìm kiếm bệnh nhân và hiển thị lịch sử điều trị.
-  - **PatientDatabase**: Hệ thống quản lý hồ sơ bệnh nhân đóng vai trò trung gian, nhận yêu cầu từ giao diện Control tương tác với Database
+  - **PatientConnect**: Hệ thống quản lý hồ sơ bệnh nhân đóng vai trò trung gian, nhận yêu cầu từ giao diện Control tương tác với Database
 - **Control**:
   - PatientHistoryController: Xử lý logic tìm kiếm trước khi trả kết quả
 - **Entity**:
@@ -11,12 +11,12 @@
   - TreatmentRecord: Bản ghi chi tiết điều trị của bệnh nhân.
 
 ## Biểu đồ Sequence
-![Diagram](https://www.planttext.com/plantuml/png/n9N1RjD048Rl-nIZtlC2KOKg5Q5Ug12D41mtwsrsXJs6zRZ2nog77Y8EVG9KK8KeL5muUGyzEE8zvWbu1UH63OdjfKugnDNh-UVVVpxD_l8tUnb9HtaI2waeTN1ege_umbPN23A38vB7nsASvXX9Ly0pILOZ7TYCKbSyILqYL8haqhXnjB_u6clNAdugKKvqef6EYenq8ZIIfUNnOqboB3DzztdajAJwx-TQfIuIujOI31vrc1d2lc7_7a4PzbyKu7oA4zXvgHE8sS-KWOpzzOveLxRr_jnW2A-ggnmKbvzpYBcyB22IQ22hBfI1CVipD81rR28aiIBVl7xjEI_OJn78Sddp1efbDn6eMP6xYsi88vSNSCBb9ORi0R7_2khdHHt31uZOVuVOiZyBDzeT3BewSVa9JjYVRXx4Yc0xYKF3vNNGVjVOLkGwvdPW5xaQzhEWwj-16bNV4dXT3oQvrqnVXgYVvd_3Xqpr0oT05ZljRGn9G0_YsotpDfSFvEKUlrloqiDrhrsqLZm_Pp-5T-iB2URdblrf3kJOpnw-dVfA_rF06djx3R2WmIqtL4Ul9NnRXB7RWxcDnhS1TM7T1MjjgGLiZJUkKRkdCQgV-Dy0003__mC0)
+![Diagram](https://www.planttext.com/plantuml/png/l9J1Ji9048RlVOe9Trw064DIOpWH4pdeSId5RjnkTJjBx95mu40yy0H63J51YHTFtGE74jzZdi1NCBK2bG92JBpkx7px_pD_ziDCgo4oXTeN5dCmK52gUyc3X0vFnh84B8HJPEssrGoqR34LmGb3xagiyH035Hq7ohUSGA8An4h9paw5gmhDTY2bww3bIkIuE3rYo9eiT2thwqae7wvvh0ADvCM7Iqxnr8SccRxqGAQIhUBb8c8fgWBdoLY3G_6J1joDkUpEaR_DLC3sT4Ic9m5Jq1L42xxrysgkUUwv0Wsb8-XGF9A0Nl8cBm2vN2jcJZaebzTXA7w43fdk9Wo8TBLmhTaMUpdsmb_TetZogxhy-7EKDVElyMnQ7fd1BcAtnyBsoDokDC-6P7fmu_eWo0mS3q8o4vWDEPck1bHa1dz9ZQ1u5EsC_gVmY4ro0CayW_D-dzRke4Nc5GGdqzVx1alixtXBdlPQpHw9sipDSbH4PK4wsngNgYjRwMVv2G00__y30000)
 
 
 ## Biểu đồ Lớp
 
-![Diagram](https://www.planttext.com/plantuml/png/d5GxRjj04ErvYYcLGXSW0iE0v202eaImZVJhvOWSUBchx0wL284B8qKALxb2KWGma2wLMAYGBy8Jv0e1oQNCrIT56YwmR_RDU_FXdt9pxbXOBd8LIIMSWvbWGisloR6ngrV6vl0v0XY2Gs5bDhB4Q4b035TiIQSDjcWVlI7744DzlFGyPmsUa5ieiSB4qtP1rnO5vwZv4gMnIHqCFf5_FtW1CImD9GtaUJnMKnp5VPOGSvdvU66jiLDqJgGuoDkpCx8BlekEbc9aD5kZ5Dgc800MsH8kSL_Dlls3o4wUhzeawKiuNPTCw4HXOs60zJU6YqyI5qn6dnG_isPE2dqF9mbgfZcX3TetG-kC5cgYvyRceYOCy4joj-_cxyaer183Q4mYrSQH2svt-iCq5fsqr0YUOaAooUIyv-URTcP6Hhj2iLVJXFIlsg19tPEaa7kI0LBalgkcCHxUbUWwhBAlaUmb6Gj6YA4-_1nxjtlZtngxmMH76GRapsv3G2hI98LwQnW3g77GwXeZ2rBkg0NVvQdG8iKwxzNACROh2_2XG1iiY_JRUp1mmRZsd_t7hDv5qP6Vo71uTdgXOaX9662grfj5T3Aint7WE0QP5Qkg_A8z3QosZmN8Qlspw1WF7lK8kqM9WMsr_W7Bghm7phQ_TGfC6cwgyglEG6VRx_gVVFjJ5H2ggdoG6RYg_0LFtwWgxuiQBXywoav6GtM4Iz7sKSDjjTvmT8uwgN_SVm400F__0m00)
+![Diagram](https://www.planttext.com/plantuml/png/d5IzZjD04Exz55E68YzWeTD9oI4Y4OZk4FtUUcAFME-6sN4WGbSW2ju32YHgggIu8a_Y9xXNGBRNEMz-6XgljDytttxpvwVTuxKNnLAL9j56UGyB9OHMNfCNnvjNZalucW2CmQDYNKoO19aKf70dJ3PliLKNz8QyG0hDyJBeNBLuHdvbr0Qp8DkJtZCgAT7ABMh7MKE6y5287xs05DQEiXOAEW5h9CxYuPKOyuNxVCFiU8xUgnn7PNVsYHp83ydPKaoS5NR68BS50M0K9bpZiPlZz4-OlRrGjLasj72vBeMocS4sXH4stnHklcXS2JbxqVo2tP8CXXxEChH2IqAEshT0ziugCxDBnwLg12Fyblp7TyiFv0nQZH4q9PLRvyb7jmV_yJECNZErXkUOaMvVyY7dvvjkPYRE-if8SDDIXbSTQTRq9AlqYMKze4wL8AJG764QWsU8XxYpTu_PmNvCA9yznu0sP4ahyzO9HX10ZZAiRZiWCTorU8gYoFWXVjpAkR8gnyRMtSOBTdi9yAb2ZZP2XnKzcQfe9eTX_p6G3qbovayn7bzTtfeKSb8EXEhju-eeUa0RQ9nad88kgasz-sw336psVohGzVPtrIkU10q4-sr8GRZU_e9rlVi6Kkp_sXo4BDpNkn-s05liVzeakKQRDJ_6Vm000F__0m00)
 
 **Giải thích**
 - PatientHistoryForm:
@@ -47,19 +47,16 @@
     - PrescriptionMedications: Các loại thuốc đã kê đơn
     - Consultation: Các cuộc tư vấn
     - Introduction: Giới thiệu (thông tin về các giới thiệu đến các khoa lâm sàng khác, dịch vụ xã hội, v.v.)
-    
-  - Phương thức:
-    - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
-
-- TreatmentRecord:
-  - Thuộc tính:
     - consultationDate: Ngày và giờ tư vấn.
     - diagnosis: Chẩn đoán của bác sĩ trong lần khám.
     - prescribedTreatment: Phương pháp điều trị được kê đơn.
     - medications: Danh sách thuốc và liều lượng đã được kê đơn.
     - clinicalNotes: Ghi chú từ nhân viên lâm sàng.
+    
   - Phương thức:
+    - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
     - getRecordDetails(): Trả về thông tin chi tiết của bản ghi lịch sử điều trị.
+    
 - PatientManagementSystem:
   - queryPatientList(criteria: String): List<Patient> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
   - queryPatientHistory(patientId: String): List<TreatmentRecord> - Truy vấn lịch sử điều trị của bệnh nhân theo mã định danh.

@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7bec4324-c7b6-465e-b7f6-30e1fa52ee3b)# UC4. Xem lịch sử điều trị
+# UC4. Xem lịch sử điều trị
 
 ## Phân tích lớp
 - **Boundary**:

@@ -3,7 +3,7 @@
 ## Phân tích lớp
 - **Boundary**:
   - **PatientHistoryForm**: Giao diện để nhân viên lâm sàng tương tác, bao gồm tìm kiếm bệnh nhân và hiển thị lịch sử điều trị.
-  - **PatientManagementSystem**: Hệ thống quản lý hồ sơ bệnh nhân đóng vai trò trung gian, nhận yêu cầu từ giao diện Control tương tác với Database
+  - **PatientDatabase**: Hệ thống quản lý hồ sơ bệnh nhân đóng vai trò trung gian, nhận yêu cầu từ giao diện Control tương tác với Database
 - **Control**:
   - PatientHistoryController: Xử lý logic tìm kiếm trước khi trả kết quả
 - **Entity**:

@@ -66,7 +66,7 @@
   - PatientForm: Giao diện người dùng cho nhân viên lâm sàng để nhập thông tin bệnh nhân.
   - PatientConnect: Hệ thống quản lý hồ sơ bệnh nhân.
 - **Control**:
-  - PatientRecordController: Điều khiển quy trình tạo hồ sơ bệnh nhân, xử lý dữ liệu nhập vào từ Nhân viên lâm sàng, và giao tiếp với hệ thống quản lý.
+  - PatientController: Điều khiển quy trình tạo hồ sơ bệnh nhân, xử lý dữ liệu nhập vào từ Nhân viên lâm sàng, và giao tiếp với hệ thống quản lý.
 - **Entity**:
   - PatientProfile: Thông tin cá nhân.
   - PatientDatabase: Thông tin tổng quan của bệnh nhân.

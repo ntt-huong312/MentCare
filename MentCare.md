@@ -8,7 +8,6 @@
   - PatientHistoryController: Xử lý logic tìm kiếm trước khi trả kết quả
 - **Entity**:
   - PatientDatabase: Thông tin tổng quan của bệnh nhân.
-  - TreatmentRecord: Bản ghi chi tiết điều trị của bệnh nhân.
 
 ## Biểu đồ Sequence
 ![Diagram](https://www.planttext.com/plantuml/png/l9J1Ji9048RlVOe9Trw064DIOpWH4pdeSId5RjnkTJjBx95mu40yy0H63J51YHTFtGE74jzZdi1NCBK2bG92JBpkx7px_pD_ziDCgo4oXTeN5dCmK52gUyc3X0vFnh84B8HJPEssrGoqR34LmGb3xagiyH035Hq7ohUSGA8An4h9paw5gmhDTY2bww3bIkIuE3rYo9eiT2thwqae7wvvh0ADvCM7Iqxnr8SccRxqGAQIhUBb8c8fgWBdoLY3G_6J1joDkUpEaR_DLC3sT4Ic9m5Jq1L42xxrysgkUUwv0Wsb8-XGF9A0Nl8cBm2vN2jcJZaebzTXA7w43fdk9Wo8TBLmhTaMUpdsmb_TetZogxhy-7EKDVElyMnQ7fd1BcAtnyBsoDokDC-6P7fmu_eWo0mS3q8o4vWDEPck1bHa1dz9ZQ1u5EsC_gVmY4ro0CayW_D-dzRke4Nc5GGdqzVx1alixtXBdlPQpHw9sipDSbH4PK4wsngNgYjRwMVv2G00__y30000)

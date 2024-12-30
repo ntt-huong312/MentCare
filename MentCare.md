@@ -7,10 +7,11 @@
 - **Control**:
   - PatientHistoryController: Xử lý logic tìm kiếm trước khi trả kết quả
 - **Entity**:
+  - PatientProfile: Thông tin cá nhân.
   - PatientDatabase: Thông tin tổng quan của bệnh nhân.
 
 ## Biểu đồ Sequence
-![Diagram](https://www.planttext.com/plantuml/png/l9J1Ji9048RlVOe9TrwW8OO4OpWH4xbuN4gn6zkjRcU9FH8E78W7di2e8IOeyUAfU-1GudlC4_WAfY9GACMYYTUTdM__V-RFVkXPDK0cKNckmIpq9PGQJlmWeClZYIW12-0CMQTZj7mbsao6SCgGsmBhF41VXYU-z0pB5oXzTwjKMvowjimqrtmXR0iDMo37rUanGzPYWMqONqz2-MZ7OoOqunSFBZb5CmzQf0V20P58DhANiuYrA1FEuua2Yw8d1LYCkUvEaR_Dc51pL4YwBm0Jq1M4AxwnUJNLlFHiGbEg4BeKZGMW4x-92q0kTefPKYhbyYuCHO_G9TtBmu2Rh1Qk5TjZByLU-Miu54r_L9SUVugoO_vrlfYMGtfOHEp-MDGSqhTRpVCHwJxSs1wuf8UM0m7fASn7d7HF0KhImx-angLe71P6_rDut3mvWAIVmNg_Jsftq2Rz2YudFL271kiNZYlvUJfeDGSaAf-xo54MjGXICSXczgksQ2TVw2S0003__mC0)
+![Diagram](https://www.planttext.com/plantuml/png/l9IzJiCm58NtFCKHUryWGgXI4NH2bUZ2wAOfiKWSSAuhCY86Xeg19q204581iJ350qCgtkC-0Q-0Gai9_GSarjZtopdsbxpPbsf2GfE9GaTu56kixGJvjK9Nvdsr1f5WbqIduxHYezf2fsW8ahwYkamerkbMh2F7LoHflDBGSKU6lkF5YdGSJWpKXaz3NqyXQx5IlaSJk4r1eYKItt4-Wg2oCIE2YsR-4E50SlOIeSNsJ0LGHH5dUlCquYkKYxsyR-1nTcT0gp6_falaKHaNjS2aR4yLg00T8XtpdUzRIyEVdLqqjKdHvUnMWOByMUs3f9ePvfEoNgdCmd1sWoxRataOXCM5uyY81VLAx76_dO2pnwNfHbAK2JFEVZk_MaegNsI9Ddg1YxeSddR0jhTAsSLQrGAsvnF3WmksfpZs8uHiUrw0XEqZ1XUIxOa1QRQzlrWNSdQRhep-9_dcnW6nlOVtUbMiNQBDzWcXP7jcVYhcBnely74fhV4h8tzquqlrd4yRIZcTRMZbQf3ldq_LL-tYB_yE003__mC0)
 
 
 ## Biểu đồ Lớp
@@ -60,18 +61,21 @@
   - queryPatientList(criteria: String): List<PatientProfile> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
 
 # UC5. Tạo hồ sơ bệnh nhân
+## Phân tích lớp
+- **Boundary**:
+  - PatientForm: Giao diện người dùng cho nhân viên lâm sàng để nhập thông tin bệnh nhân.
+  - PatientConnect: Hệ thống quản lý hồ sơ bệnh nhân.
+- **Control**:
+  - PatientRecordController: Điều khiển quy trình tạo hồ sơ bệnh nhân, xử lý dữ liệu nhập vào từ Nhân viên lâm sàng, và giao tiếp với hệ thống quản lý.
+- **Entity**:
+  - PatientProfile: Thông tin cá nhân.
+  - PatientDatabase: Thông tin tổng quan của bệnh nhân.
+
 
 ## Biểu đồ Sequence
 ![Diagram](https://www.planttext.com/plantuml/png/d5InRjim4Dtv5Mzi1_-0Xo10sZf06YDeZ08TQOasYKXaAb41F1OTCdGAEdJeKAiU2WGD6Y2TnC432_y7lw2_K51oAicEtA2J8DwxUtVl7ldRBFTJJHETnH6XWLO9Xjn-bQ-5lPQWAKurdKp8M6KofCaC9rGB9lKh5gWaVA6Is6FybmHAwaH5RSH1THYnnEFgFyAa5lflkPD4JKJ4F6PzyhoCR_4UKqcdB6PIdyvIpKhsZX0XPUlexPNzzN7ip1TC1LK8XJEN4fAxukOScjkVSWej92a7wkrLG_TnA9nvBw6vCnymyR7j548ZZGDxXzWkC3ma0B11FAoI6e1xdbgGFWREt8WcgA5TRwzhoZwEV9CnT4ARoLrwRP2E4bSiSE7CEvovOgdnDlC7sdwFSIPSiOpnHBfYcI6mTqyVQAkQi2LKBGx6NcSEwHtLAiIYbE6e0WPjyHuvzXjxdI5mnRSCsXMvAakq-69dFel_56D7iN_Etv7BPBXboU6cdLg9fDic3GC-g5TrVVeObTBykdBcIa2lRfrPo6cRP6V-mEQosLvWytLQwVjdpln0v6zJ1kxCuXoHCvVTQxml-t9rctLEZNfZ5Nwd3mQygGOkx5mXMEL8_MqFw_ugousuDtMJ-t4xZPpv97nnp6hVSMNd7b2-9jL-suNMpyYe8XlRNAszoftvY7IL-pxcaYFm0BBFPEYVuJy0003__mC0)
 # Biểu đồ Lớp
-## Phân tích lớp
-- **Boundary**:
-  - PatientRecordForm: Giao diện người dùng cho nhân viên lâm sàng để nhập thông tin bệnh nhân.
-  - PatientManagementSystem: Hệ thống quản lý hồ sơ bệnh nhân.
-- **Control**:
-  - PatientRecordController: Điều khiển quy trình tạo hồ sơ bệnh nhân, xử lý dữ liệu nhập vào từ Nhân viên lâm sàng, và giao tiếp với hệ thống quản lý.
-- **Entity**:
-  - PatientProfile: thông tin cá nhân
+
 
 ![Diagram](https://www.planttext.com/plantuml/png/Z5F1JW913BtlLymH3iJxnX0JZSac4WahtkjCMHg73awx66ByCWz-ahzWPfSL5Z1XRzE-rxw-Td--lcz48Mgzyfdr86Ace8IiCxGXkliGL-OZC-aZNjTw1mfvXvd6i22FRRf2tOMB11mCpyCSoTh3jgojHP49Ya252Rm9vBBFx9oAsy0QW_SOEoqs8YZsG8Dr-pfkEypDImWUWLkgm0QVGfhZ1GGlO1rhcW13XIjaBRUY-ETFAho3NAgbGiO8YdEcjxeZ5oxP8Hg9gvFckq9Dpv4f7BBIWZ3cfcm9AJp5A8715xm8SGLAWNlv6Sdhu-APWaUss4lT4LGSXAGNVKfsfudxRIAAZRHEzIVeo3QT93SF97gzZumRz6rWgRtkr3IGmr0BAjAYNMtxaXkpDk39xPUU5ZWuyXD4gEBMp6CNizEx7et6_zvPRafa9yQ1Wj7GPn_W3cgSt4MUni48LiMyaoulATBjDpTpGUaO9wNFCahOe5pTezebjigpx0RPfN_x5m00__y30000)
 

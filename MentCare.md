@@ -15,7 +15,7 @@
 
 ## Biểu đồ Lớp
 
-![Diagram](https://www.planttext.com/plantuml/png/b5InRjim4Dtr5JUwWtz0A880TeeOQ5eZBRepr5awb2BTuycjKMGeElG_sg50vqxsaC5VeY_8BnIYAKUqdQ6B2F2zktjtzwZ7xSEb5yNIr2RJHdaFSoM4Lgx9Y-FrAySrVCq0nk1HiQucJ89C2d9u9qos3DXo7_IQl40EtV4ovha8U45-QTGQYvYs9xrdL5AZbLlKZekE3B5GZ1-zW1nMZee0nJmHwrASnMEL5FEL-tp5xFW6lLSbZkhzsJTo8DzdwIWcpWexOv33900OXGbNU2pZkEyJPgyhZcjM36i_Fv1AsS9Wq3x2xfl3rHUDIo5ddrKzPxSWWt5vimAjq8AGaxtDaRspoipimd6jkeG9Val-uzl51t86hSO4cf8ghVFaazk3_hGCezTCGV0D5gH39HzxVhhPcsNYh6-CH3M1ChpQasRTJef6dqZM0-fK2K8EtH5j63KVkPU3l3ii3l9JGlsaEGMq8KjQcJTEC840IfJXT8D1KdY_uYcA8kE7-1a3MjGItVUfGKvUW8vFyiHCYHM7OTV_xyFxB3lpPnYFBywyaXnAKWw4sit3iWyRu6bKQ2q7NJNhTllTnZ1Ox_uqeDlDxsQG8N07uRt9Sn1kDxzWrMw_WLIxlxO48GjtxVQ7hS1MkvysooxH5jsFxXy0003__mC0)
+![Diagram](https://www.planttext.com/plantuml/png/f5J1RjD04BtxA-OO3la12rMLaY8YjH0Ln7sxdjWZrhDXTXo840V4WV-00n9dJicXXto9lw2_WEoiYzqwKYKkNcdVl3VpPcPzjxyz3sf4gz8brfaGO6cKaFKb1VMoVU6bXCy9m1G26h75J4XHo40ARrI8ynPR7qcN51HIQ8xdKMSfVaKEpn80Y18HcJo353QUiXRAAAoTsKQiKHZ5Orb3B1J-uuM8boiCmUGuAOzdL-9zy9TaQ7BcMSKxXz9w111K8TpWmp9EEYeCPmxRv1DilYbSVBAuLl9yCcrKY7rTPCXAAq8Pj7I94ZmRj-2Lbz8qWWFyciBxrwjtv1sonG4q9vEp3nG6jsy5ZPR8EamZ6AnGM_0LPcJRJ25Q_dVJs9t2p7EedCPgsf3-rJ5eqJGrg-oZagqZ9clSAwyO-Wi4aAFs3RTD7yBNQBraSrH3BlJnaQ4oMeqJ_L2X3BRAnWNkByVbs7WVwiwDcXiJkh6TN8d_oZZo-gRJiv5zJI4duq6ftjskEreF7xBQXgHWYsfRxxznfC7syBi2M-z-LJs5DhP7xtm_XNxVenw_s_OKLEhTJzZK-w-WnU4Fvw34S5FlltC1N1n-S9AS8sVDp-Wl0000__y30000)
 
 **Giải thích**
 - PatientHistoryForm:
@@ -46,19 +46,18 @@
     - PrescriptionMedications: Các loại thuốc đã kê đơn
     - Consultation: Các cuộc tư vấn
     - Introduction: Giới thiệu (thông tin về các giới thiệu đến các khoa lâm sàng khác, dịch vụ xã hội, v.v.)
-    - consultationDate: Ngày và giờ tư vấn.
-    - diagnosis: Chẩn đoán của bác sĩ trong lần khám.
-    - prescribedTreatment: Phương pháp điều trị được kê đơn.
-    - medications: Danh sách thuốc và liều lượng đã được kê đơn.
     - clinicalNotes: Ghi chú từ nhân viên lâm sàng.
     
   - Phương thức:
     - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
     - getRecordDetails(): Trả về thông tin chi tiết của bản ghi lịch sử điều trị.
-    
+- PatientConnect:
+  + queryPatientList(criteria: String) : List<PatientProfile>
 - PatienDatabase:
-  - queryPatientList(criteria: String): List<Patient> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
-  - queryPatientHistory(patientId: String): List<TreatmentRecord> - Truy vấn lịch sử điều trị của bệnh nhân theo mã định danh.
+  - Thuộc tính:
+    - List<PatientProfile>
+  - Phương thức:
+  - queryPatientList(criteria: String): List<PatientProfile> - Truy vấn danh sách bệnh nhân dựa trên tiêu chí.
 
 # UC5. Tạo hồ sơ bệnh nhân
 

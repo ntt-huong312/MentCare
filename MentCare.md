@@ -40,14 +40,18 @@
 - PatientProfile:
   - Thuộc tính:
     - patientId: Mã định danh duy nhất của bệnh nhân.
-    - PersonalInformation: Thông tin cá nhân của bệnh nhân (ví dụ: họ tên, ngày sinh, địa chỉ).
+    - patientName: Tên bệnh nhân
+    - address: Địa chỉ
+    - birthday: Ngày sinh
+    - contactInfo: Thông tin liên lạc
+    - registeredMedicalFacility: Cơ sở y tế đã đăng ký
+    - familyContactInfo: Thông tin liên hệ gia đình
     - RiskOfViolence: Đánh giá rủi ro về tự gây hại/bạo lực
     - Diagnosis: Chẩn đoán các tình trạng (bệnh nhân có thể mắc nhiều tình trạng cùng một lúc)
     - Treatment: Phương pháp điều trị (nhiều phương pháp điều trị có thể được kê đơn, bao gồm CBT)
     - PrescriptionMedications: Các loại thuốc đã kê đơn
     - Consultation: Các cuộc tư vấn
     - Introduction: Giới thiệu (thông tin về các giới thiệu đến các khoa lâm sàng khác, dịch vụ xã hội, v.v.)
-    - clinicalNotes: Ghi chú từ nhân viên lâm sàng.
     
   - Phương thức:
     - getPersonalInfo(): Trả về thông tin cá nhân của bệnh nhân.
@@ -101,6 +105,12 @@
 - PatientProfile:
   - Thuộc tính:
     - patientId: Mã định danh duy nhất của bệnh nhân.
+    - patientName: Tên bệnh nhân
+    - address: Địa chỉ
+    - birthday: Ngày sinh
+    - contactInfo: Thông tin liên lạc
+    - registeredMedicalFacility: Cơ sở y tế đã đăng ký
+    - familyContactInfo: Thông tin liên hệ gia đình
     - PersonalInformation: Thông tin cá nhân của bệnh nhân (ví dụ: họ tên, ngày sinh, địa chỉ).
     - RiskOfViolence: Đánh giá rủi ro về tự gây hại/bạo lực
     - Diagnosis: Chẩn đoán các tình trạng (bệnh nhân có thể mắc nhiều tình trạng cùng một lúc)
